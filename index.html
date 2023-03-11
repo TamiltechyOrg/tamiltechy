@@ -34,6 +34,8 @@
       $("#footer").load("./common/footer.html");
     });
   </script>
+
+<script src="https://cdn.jsdelivr.net/npm/markdown-it/dist/markdown-it.min.js"></script>
 </head>
 
 <body>
@@ -68,7 +70,7 @@
               <img src="./assets/images/html_bannar.jpeg" alt="html courses" width="100%" />
             </div>
             <div class="course-desc">Learn HTML free course</div>
-            <a href="./pages/css.html"><button class="course-btn">Course</button></a>
+            <a href="./pages/html_page.html"><button class="course-btn">Course</button></a>
           </div>
         </div>
         <div class="col">
@@ -145,6 +147,7 @@
         </div>
       </div>
     </div>
+    <div id="readme"></div>
   </section>
   <footer class="main-footer" id="footer"></footer>
 
@@ -155,6 +158,18 @@
 
   <!-- link js file -->
   <script src="./assets/js/main.js"></script>
+
+  <script>
+    // Load the contents of your README file
+    fetch('https://github.com/Prasanna-dot/java/blob/Main/README.md')
+      .then(response => response.text())
+      .then(text => {
+        // Convert the Markdown to HTML using marked.js
+        const html = marked(text);
+        // Insert the HTML into the README container
+        document.querySelector('#readme').innerHTML = html;
+      });
+  </script>
 </body>
 
 </html>

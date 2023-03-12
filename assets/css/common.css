@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Tilt+Warp&display=swap');
+
+body {
+  background-color: #3b3b3b;
+}
+
+body section {
+  margin: 2% 0%;
+}
+
+body h1 {
+  width: 100%;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 3%;
+}
+
+body h3 {
+  color: rgb(0, 0, 0);
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 2%;
+  font-weight: 300;
+}
+
+body h4 {
+  color: rgb(0, 0, 0);
+  font-family: 'Poppins', sans-serif;
+}
+
+table {
+  width: 100%;
+}
+
+body p {
+  color: rgb(0, 0, 0);
+  font-size: 1vw;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 3%;
+}
+
+.hljs-keyword {
+  color: rgb(255, 77, 77);
+}
+
+.hljs-variable {
+  color: rgb(158, 158, 255);
+}
+
+.hljs-type {
+  color: rgb(143, 182, 143);
+}
+
+.code-snippet {
+  background-color: #3b3b3b;
+  border-radius: 5px;
+  color: #fff;
+  margin: 3% 0%;
+}
+
+.code-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.code-language {
+  font-size: 1vw;
+  font-weight: bold;
+  padding: 0% 1%;
+}
+
+.code-copy-btn {
+  background-color: #47614800;
+  border: none;
+  color: white;
+  padding: 0.5% 2%;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.code-body {
+  background-color: #000000;
+  border-radius: 5px;
+  overflow-x: auto;
+  padding: 2% 5%;
+}
+
+.code-body code {
+  color: white;
+  font-size: 1v;
+  font-family: monospace;
+}
+
+
+.java .highlight {
+  color: rgb(255, 122, 122);
+}

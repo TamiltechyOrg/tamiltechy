@@ -1,246 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Meta tags -->
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Website title -->
-    <title>Tamiltechy</title>
+<head>
+  <!-- Meta tags -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Link style -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
+  <!-- Website title -->
+  <title>Tamiltechy</title>
 
-    <!-- Link boostrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
+  <!-- Link style -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
 
-    <!-- link google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Gloock&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Link boostrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
 
-    <!-- link fontawesome -->
-    <link
-      rel="stylesheet"
-      href="https://kit.fontawesome.com/55581d092f.css"
-      crossorigin="anonymous"
-    />
+  <!-- link fontawesome -->
+  <script src="https://kit.fontawesome.com/55581d092f.js" crossorigin="anonymous"></script>
 
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.js"
-      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-      crossorigin="anonymous"
-    ></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
 
-    <script>
-      $(function () {
-        $("#header").load("./common/header.html");
-        $("#footer").load("./common/footer.html");
-      });
-    </script>
+  <script>
+    $(function () {
+      $("#footer").load("./common/footer.html");
+      $("#preLoader").load("./common/loader.html");
+    });
+  </script>
+</head>
 
-    <script src="https://cdn.jsdelivr.net/npm/markdown-it/dist/markdown-it.min.js"></script>
-  </head>
+<body id="body">
 
-  <body>
-    <!-- Header -->
-    <header id="header"></header>
-
-    <!-- bannar section -->
-    <section class="container-fluid bannar-section">
-      <div class="row row-class">
-        <div class="col-md">
-          <div class="pages-main">
-            <div class="center-text-content">
-              Learning together even when we are apart
-              <div class="main_content_line"></div>
-              <a href="#section-2"><button>courses</button></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md image-div">
-          <img src="./assets/images/banner_image.png" height="100%" />
+  <!-- loader -->
+  <div id="preLoader"></div>
+  <!-- Header -->
+  <header id="header">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <div class="logo"><a href="./../index.html">TAMILTECHY.</a></div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse nav-menu-text" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-pills">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Courses
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./courses/html-courses.html"><i class="fa-brands fa-html5"></i>
+                    Html</a></li>
+                <li><a class="dropdown-item" href="./courses/css-courses.html""><i class=" fa-brands fa-css3-alt"></i>
+                    Css</a></li>
+                <li><a class="dropdown-item" href="./courses/javascript-courses.html""><i class=" fa-brands fa-js"></i>
+                    Javascript</a></li>
+                <li><a class="dropdown-item" href="./courses/html-courses.html""><i class=" fa-brands fa-java"></i>
+                    Java</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#courses">More..</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Exercises
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./exercises/java-exercises.html"><i class="fa-brands fa-java"></i>
+                    Java</a></li>
+                <li><a class="dropdown-item" href="./exercises/mysql-exercises.html"><i class="fa-solid fa-code"></i>
+                    Mysql</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#courses">More..</a></li>
+              </ul>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">Cheat Sheet</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
+    </nav>
+  </header>
 
-    <!-- course section -->
-    <section class="container section-2" id="section-2">
-      <div class="container text-center">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
-          <div class="col">
-            <div class="course-card">
-              <div class="icon-div">
-                <img
-                  src="./assets/images/html_bannar.jpeg"
-                  alt="html courses"
-                  width="100%"
-                />
-              </div>
-              <div class="course-desc">Learn HTML free course</div>
-              <a href="./pages/html_page.html"
-                ><button class="course-btn">Course</button></a
-              >
-            </div>
-          </div>
-          <div class="col">
-            <div class="course-card">
-              <div class="icon-div">
-                <img
-                  src="./assets/images/js_bannar.jpeg"
-                  alt="javascript courses"
-                  width="100%"
-                />
-              </div>
-              <div class="course-desc">Learn Javascript free course</div>
-              <a href="./pages/js.html"
-                ><button class="course-btn">Course</button></a
-              >
-            </div>
-          </div>
-          <div class="col">
-            <div class="course-card">
-              <div class="icon-div">
-                <img
-                  src="./assets/images/css_bannar.jpeg"
-                  alt="css courses"
-                  width="100%"
-                />
-              </div>
-              <div class="course-desc">Learn CSS free course</div>
-              <a href="./pages/css.html"
-                ><button class="course-btn">Course</button></a
-              >
-            </div>
-          </div>
-          <div class="col">
-            <div class="course-card">
-              <div class="icon-div">
-                <img
-                  src="./assets/images/java_bannar.jpeg"
-                  alt="java courses"
-                  width="100%"
-                />
-              </div>
-              <div class="course-desc">Learn Java free course</div>
-              <a href="./pages/css.html"
-                ><button class="course-btn">Course</button></a
-              >
-            </div>
-          </div>
-          <div class="col">
-            <div class="course-card">
-              <div class="icon-div">
-                <img
-                  src="./assets/images/dbms_bannar.jpeg"
-                  alt="dbms courses"
-                  width="100%"
-                />
-              </div>
-              <div class="course-desc">Learn DBMS free course</div>
-              <a href="./pages/dbms.html"
-                ><button class="course-btn">Course</button></a
-              >
-            </div>
-          </div>
-          <div class="col">
-            <div class="course-card">
-              <div class="icon-div">
-                <img
-                  src="./assets/images/mysql_bannar.jpeg"
-                  alt="Mysql courses"
-                  width="100%"
-                />
-              </div>
-              <div class="course-desc">Learn Mysql free course</div>
-              <a href="./pages/mysql.html"
-                ><button class="course-btn">Course</button></a
-              >
-            </div>
-          </div>
-          <div class="col">
-            <div class="course-card">
-              <div class="icon-div">
-                <img
-                  src="./assets/images/testing_bannar.jpeg"
-                  alt="testing_courses"
-                  width="100%"
-                />
-              </div>
-              <div class="course-desc">Learn Testing free course</div>
-              <a href="./pages/testing.html"
-                ><button class="course-btn">Course</button></a
-              >
-            </div>
-          </div>
-          <div class="col">
-            <div class="course-card">
-              <div class="icon-div">
-                <img
-                  src="./assets/images/ror_bannar.jpeg"
-                  alt="ruby_on_rails_courses"
-                  width="100%"
-                />
-              </div>
-              <div class="course-desc">Learn Ruby on Rails free course</div>
-              <a href="./pages/ruby_on_rails.html"
-                ><button class="course-btn">Course</button></a
-              >
-            </div>
-          </div>
-          <div class="col">
-            <div class="course-card">
-              <div class="icon-div">
-                <img
-                  src="./assets/images/cf_bannar.jpeg"
-                  alt="Fundamentals_of_computer_courses"
-                  width="100%"
-                />
-              </div>
-              <div class="course-desc">computer Fundamental course</div>
-              <a href="./pages/cf.html"
-                ><button class="course-btn">Course</button></a
-              >
-            </div>
-          </div>
-          <div class="col">
-            <div class="course-card">
-              <div class="icon-div">
-                <img
-                  src="./assets/images/linux_bannar.jpeg"
-                  alt="linux_courses"
-                  width="100%"
-                />
-              </div>
-              <div class="course-desc">Learn Linux free course</div>
-              <a href="./pages/linux.html"
-                ><button class="course-btn">Course</button></a
-              >
-            </div>
+  <!-- bannar section -->
+  <section class="container-fluid bannar-section">
+    <div class="row mobile">
+      <div class="col-md">
+        <img src="./assets/images/main_image.png" width="100%" height="auto"/>
+      </div>
+      <div class="col-md">
+        <div class="center-text-content">
+          Learning together even when we are apart
+          <br>
+          <a href="#courses">
+            <button class="main-button">
+              Start
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row row-class large">
+      <div class="col-md">
+        <div class="pages-main">
+          <div class="center-text-content">
+            Learning together even when we are apart
+            <br>
+            <a href="#courses">
+              <button class="main-button">
+                Start
+              </button>
+            </a>
           </div>
         </div>
       </div>
-      <div id="readme"></div>
-    </section>
-    <footer class="main-footer" id="footer"></footer>
+      <div class="col-md image-div">
+        <img src="./assets/images/main_image.png" height="80%" />
+      </div>
+    </div>
+  </section>
 
-    <!-- Link boostrap -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
+  <!-- course section -->
+  <section class="container section-2" id="courses">
+    <div class="container text-center">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+        <div class="col">
+          <a href="./courses/html-courses.html">
+            <div class="course-card html">
+              <div class="LogoDiv">
+                <img src="./assets/images/html.png" alt="html-courses" width=60%">
+              </div>
+              <h3 class="text-center">HTML</h3>
+            </div>
+        </div></a>
+        <div class="col">
+          <a href="./courses/css-courses.html">
+            <div class="course-card css">
+              <div class="LogoDiv">
+                <img src="./assets/images/css.png" alt="css-courses" width=60%">
+              </div>
+              <h3 class="text-center">CSS</h3>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="./courses/javascript-courses.html">
+            <div class="course-card javascript">
+              <div class="LogoDiv">
+                <img src="./assets/images/js.png" alt="javascript-courses" width=60%">
+              </div>
+              <h3 class="text-center">Javascript</h3>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="./courses/mysql-courses.html">
+            <div class="course-card mysql">
+              <div class="LogoDiv">
+                <img src="./assets/images/mysql.png" alt="mysql-courses" width=80%">
+              </div>
+              <h3 class="text-center">Mysql</h3>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="./courses/dbms-courses.html">
+            <div class="course-card dbms">
+              <div class="LogoDiv">
+                <img src="./assets/images/dbms.png" alt="dbms-courses" width=70%">
+              </div>
+              <h3 class="text-center">DBMS</h3>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="./courses/testing-courses.html">
+            <div class="course-card testing">
+              <div class="LogoDiv">
+                <img src="./assets/images/testing.png" alt="testing-courses" width=80%">
+              </div>
+              <h3 class="text-center">Testing</h3>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="./courses/java-courses.html">
+            <div class="course-card java">
+              <div class="LogoDiv">
+                <img src="./assets/images/java.png" alt="java-courses" width=80%">
+              </div>
+              <h3 class="text-center">Java</h3>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="./courses/coumputer-fundamental-courses.html">
+            <div class="course-card computer-fundamental">
+              <div class="LogoDiv">
+                <img src="./assets/images/computer-fundamental.png" alt="computer-fundamental-courses" width=90%">
+              </div>
+              <h3 class="text-center">Computer fundamental</h3>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="./courses/linux-courses.html">
+            <div class="course-card linux">
+              <div class="LogoDiv">
+                <img src="./assets/images/linux.png" alt="linux-courses" width=90%">
+              </div>
+              <h3 class="text-center">Linux</h3>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="./courses/ruby-on-rails-courses.html">
+            <div class="course-card ror">
+              <div class="LogoDiv">
+                <img src="./assets/images/ror.png" alt="ror-courses" width=80%">
+              </div>
+              <h3 class="text-center">Ruby on rails</h3>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="main-footer" id="footer"></footer>
 
-    <!-- link js file -->
-    <script src="./assets/js/main.js"></script>
-  </body>
+  <script src="./assets/js/main.js"></script>
+
+  <script src="https://kit.fontawesome.com/55581d092f.js" crossorigin="anonymous"></script>
+
+  <!-- Link boostrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

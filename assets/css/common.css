@@ -39,6 +39,40 @@ body p {
   margin-bottom: 3%;
 }
 
+@media only screen and (max-width: 600px) {
+  body h1 {
+    width: 100%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 3%;
+    font-size: 6vw;
+  }
+  
+  body h3 {
+    color: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 2%;
+    font-weight: 300;
+    font-size: 4vw;
+  }
+  
+  body h4 {
+    color: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+    font-size: 3vw;
+  }
+
+  body p {
+    color: rgb(0, 0, 0);
+    font-size: 1vw;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 3%;
+    font-size: 3vw;
+  }
+  
+}
+
 .hljs-keyword {
   color: rgb(255, 77, 77);
 }
@@ -78,6 +112,23 @@ body p {
   border-radius: 2px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+}
+
+@media only screen and (max-width: 600px) {
+  .code-header {
+    height: 4vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .code-language {
+    font-size: 3vw;
+    padding: 0% 2%;
+  }
+
+  .code-copy-btn {
+    font-size: 2vw;
+  }
 }
 
 .code-body {

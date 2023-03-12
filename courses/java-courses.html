@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tamiltechy | Java</title>
+
+    <link rel="stylesheet" href="./../assets/css/style.css" />
+    <link rel="stylesheet" href="./../assets/css/common.css" />
+    <!-- Link boostrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <!-- link fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/55581d092f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("#header").load("./../common/header.html");
+        $("#preLoader").load("./../common/loader.html");
+        $("#footer").load("./../common/footer.html");
+      });
+    </script>
+  </head>
+  <body id="body">
+    <!-- loader -->
+    <div id="preLoader"></div>
+    <!-- Header -->
+    <header id="header"></header>
+    <section class="main-content container" id="java">
+      <h1 id="oops">Java</h1>
+      <div>
+        <iframe
+          src="https://docs.google.com/presentation/d/e/2PACX-1vQ_ZC0k74z9ccXQJtRQcZVHLSi6g0cqHOO-5qteH6_mgUM0wPkDTSa7JA82y-zChg/embed?start=false&loop=false&delayms=3000"
+          frameborder="0"
+          width="100%"
+          height="839"
+          allowfullscreen="true"
+          mozallowfullscreen="true"
+          webkitallowfullscreen="true"
+        ></iframe>
+      </div>
+    </section>
+    <section class="container" id="java-basic-comments">
+      <h3 id="java-basic-program">Java basic comment</h3>
+      <hr />
+      <div class="code-snippet">
+        <div class="code-header">
+          <span class="code-language">Java</span>
+          <button class="code-copy-btn">
+            <i class="fa-regular fa-copy"></i> Copy
+          </button>
+        </div>
+        <pre class="code-body">
+          <code>
+            <span class="hljs-keyword">class</span> <span class="hljs-title class_">basic</span>{
+              Public <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(string args[])</span>{
+              System.out.println(“Hello java”);
+              }
+            }
+          </code>
+        </pre>
+      </div>
+      <h3 id="multi-and-single-line-command-in-java">
+        Multi and single line command
+      </h3>
+      <hr />
+      <h4 id="single-line-command--command-">
+        Single line command <code>// command </code>
+      </h4>
+      <h4 id="multi-line-commend--command--">
+        Multi line commend <code>/* command */ </code>
+      </h4>
+    </section>
+    <section class="container" id="java-variables">
+      <h1 id="variables-in-java">Variables</h1>
+      <div class="code-snippet">
+        <div class="code-header">
+          <span class="code-language">Java</span>
+          <button class="code-copy-btn">
+            <i class="fa-regular fa-copy"></i> Copy
+          </button>
+        </div>
+        <pre class="code-body">
+          <code>
+            <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String args[])</span>{
+              <span class="hljs-type">String</span> <span class="hljs-variable">name</span> <span class="hljs-operator">=</span> <span class="hljs-string">&quot;Prasanna venkatesh&quot;</span>;
+              <span class="hljs-type">int</span> <span class="hljs-variable">age</span> <span class="hljs-operator">=</span> <span class="hljs-number">21</span>;
+              <span class="hljs-type">float</span> <span class="hljs-variable">percentage</span> <span class="hljs-operator">=</span> <span class="hljs-number">78.7f</span>;
+              <span class="hljs-type">char</span> <span class="hljs-variable">gender</span> <span class="hljs-operator">=</span> <span class="hljs-string">&#x27;M&#x27;</span>;
+              <span class="hljs-type">boolean</span> <span class="hljs-variable">married</span> <span class="hljs-operator">=</span> <span class="hljs-literal">false</span>;
+              System.out.println(<span class="hljs-string">&quot;name : &quot;</span> + name);
+              System.out.println(<span class="hljs-string">&quot;age : &quot;</span> + age);
+              System.out.println(<span class="hljs-string">&quot;percentage : &quot;</span> + percentage);
+              System.out.println(<span class="hljs-string">&quot;gender : &quot;</span> + gender);
+              System.out.println(<span class="hljs-string">&quot;married  : &quot;</span> + married);
+             }
+        }
+          </code>
+        </pre>
+      </div>
+    </section>
+    <section class="container" id="java-casting">
+      <h1 id="types-of-casting-in-java">Types of casting</h1>
+      <h3 id="widening-casting">Widening casting</h3>
+      <hr />
+      <p>
+        <code
+          >byte -&gt; short -&gt; char -&gt; int -&gt; long -&gt; float -&gt;
+          double</code
+        >
+      </p>
+      <h3 id="narrow-casting">Narrow casting</h3>
+      <hr />
+      <p>
+        <code
+          >Double -&gt; float -&gt; long -&gt; int -&gt; char -&gt; short -&gt;
+          byte</code
+        >
+      </p>
+      <div class="code-snippet">
+        <div class="code-header">
+          <span class="code-language">Java</span>
+          <button class="code-copy-btn">
+            <i class="fa-regular fa-copy"></i> Copy
+          </button>
+        </div>
+        <pre class="code-body">
+          <code>
+            <span class="hljs-keyword">class</span> <span class="hljs-title class_">basic</span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String args[])</span>{
+        <span class="hljs-type">int</span> <span class="hljs-variable">a</span> <span class="hljs-operator">=</span> <span class="hljs-number">10</span>;
+        <span class="hljs-type">double</span> <span class="hljs-variable">b</span> <span class="hljs-operator">=</span> a, c = <span class="hljs-number">25.456</span>;
+        <span class="hljs-type">int</span> <span class="hljs-variable">d</span> <span class="hljs-operator">=</span> (<span class="hljs-type">int</span>), c;
+        System.out.println(<span class="hljs-string">&quot;int : &quot;</span> + a);
+        System.out.println(<span class="hljs-string">&quot;double : &quot;</span> + b);
+        System.out.println(<span class="hljs-string">&quot;double : &quot;</span> + c);
+        System.out.println(<span class="hljs-string">&quot;int : &quot;</span> + d);
+       }
+  }
+</code></pre>
+      </div>
+    </section>
+    <section class="container" id="java-operator">
+      <h1>operators</h1>
+      <h3 id="arithmetic-operator-in-java">Arithmetic operator</h3>
+      <hr />
+
+      <div class="code-snippet">
+        <div class="code-header">
+          <span class="code-language">Java</span>
+          <button class="code-copy-btn">
+            <i class="fa-regular fa-copy"></i> Copy
+          </button>
+        </div>
+        <pre class="code-body">
+          <code><span class="hljs-keyword">class</span> <span class="hljs-title class_">basic</span>{
+   <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String args[])</span>{
+       <span class="hljs-type">int</span> <span class="hljs-variable">a</span> <span class="hljs-operator">=</span> <span class="hljs-number">10</span>, b=<span class="hljs-number">20</span>;
+       System.out.println(<span class="hljs-string">&quot;Add : &quot;</span> + (a+b));
+       System.out.println(<span class="hljs-string">&quot;multi : &quot;</span> + (a*b));
+       System.out.println(<span class="hljs-string">&quot;Sub : &quot;</span> + (a-b));
+       System.out.println(<span class="hljs-string">&quot;div : &quot;</span> + (a/b));
+       System.out.println(<span class="hljs-string">&quot;modular : &quot;</span> + (a%b));
+      }
+ }
+</code></pre>
+      </div>
+      <h3 id="arithmetic-assignment-operator-in-java">
+        Arithmetic assignment operator
+      </h3>
+      <hr />
+      <div class="code-snippet">
+        <div class="code-header">
+          <span class="code-language">Java</span>
+          <button class="code-copy-btn">
+            <i class="fa-regular fa-copy"></i> Copy
+          </button>
+        </div>
+        <pre class="code-body">
+          <code><span class="hljs-keyword">class</span> <span class="hljs-title class_">basic</span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String args[])</span>{
+        <span class="hljs-type">int</span> <span class="hljs-variable">a</span> <span class="hljs-operator">=</span> <span class="hljs-number">10</span>;
+        System.out.println(a);
+        a += <span class="hljs-number">10</span>;
+        System.out.println(a);
+        a -= <span class="hljs-number">10</span>;
+        System.out.println(a);
+        a *= <span class="hljs-number">10</span>;
+        System.out.println(a);
+        a /= <span class="hljs-number">10</span>;
+        System.out.println(a);
+        a %= <span class="hljs-number">10</span>;
+        System.out.println(a);
+       }
+  }
+</code></pre>
+      </div>
+      <h3 id="relational-oprator-in-java">relational oprator</h3>
+      <hr />
+
+      <div class="code-snippet">
+        <div class="code-header">
+          <span class="code-language">Java</span>
+          <button class="code-copy-btn">
+            <i class="fa-regular fa-copy"></i> Copy
+          </button>
+        </div>
+        <pre class="code-body">
+          <code><span class="hljs-keyword">class</span> <span class="hljs-title class_">basic</span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String args[])</span>{
+        <span class="hljs-type">int</span> <span class="hljs-variable">a</span> <span class="hljs-operator">=</span> <span class="hljs-number">100</span>, b=<span class="hljs-number">24</span>;
+        System.out.println(<span class="hljs-string">&quot;Equal to &quot;</span>+ (a==b));
+        System.out.println(<span class="hljs-string">&quot;less than &quot;</span>+(a&lt;b));
+        System.out.println(<span class="hljs-string">&quot;grater than &quot;</span>+(a &gt; b));
+        System.out.println(<span class="hljs-string">&quot;not equal than &quot;</span>+(a != b));
+        System.out.println(<span class="hljs-string">&quot;less than or equal to &quot;</span>+(a &lt;= b));
+        System.out.println(<span class="hljs-string">&quot;grater than or equal to &quot;</span>+(a &gt;= b));
+       }
+  }
+</code></pre>
+      </div>
+      <h3 id="logical-operator-in-java">logical operator</h3>
+      <hr />
+
+      <div class="code-snippet">
+        <div class="code-header">
+          <span class="code-language">Java</span>
+          <button class="code-copy-btn">
+            <i class="fa-regular fa-copy"></i> Copy
+          </button>
+        </div>
+        <pre class="code-body">
+          <code><span class="hljs-keyword">class</span> <span class="hljs-title class_">basic</span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String args[])</span>{
+        <span class="hljs-type">int</span> <span class="hljs-variable">a</span> <span class="hljs-operator">=</span> <span class="hljs-number">100</span>, b=<span class="hljs-number">24</span>;
+        System.out.println(<span class="hljs-string">&quot;And &amp;&amp; &quot;</span>+ (a&gt;b &amp;&amp; a&gt;b));
+        System.out.println(<span class="hljs-string">&quot;or || &quot;</span>+ (a&gt;b || a&gt;b));
+       }
+  }
+</code></pre>
+      </div>
+      <h3 id="conditional-and-ternary-operator-in-java">
+        Conditional and ternary operator
+      </h3>
+      <hr />
+
+      <div class="code-snippet">
+        <div class="code-header">
+          <span class="code-language">Java</span>
+          <button class="code-copy-btn">
+            <i class="fa-regular fa-copy"></i> Copy
+          </button>
+        </div>
+        <pre class="code-body">
+          <code><span class="hljs-keyword">class</span> <span class="hljs-title class_">basic</span>{
+   <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String args[])</span>{
+       <span class="hljs-type">int</span> <span class="hljs-variable">a</span> <span class="hljs-operator">=</span> <span class="hljs-number">100</span>, b=<span class="hljs-number">24</span>,c;
+       c=a&gt;b?a:b;
+       System.out.println(<span class="hljs-string">&quot;The greatest number is&quot;</span>+ c);
+       <span class="hljs-type">int</span> <span class="hljs-variable">d</span> <span class="hljs-operator">=</span> <span class="hljs-number">100</span>, e=<span class="hljs-number">24</span>,f;
+       f=d&lt;e?d:e;
+       System.out.println(<span class="hljs-string">&quot;The lowest number is&quot;</span>+ f);
+      }
+ }
+</code></pre>
+      </div>
+      <h3 id="unary-operator-in-java">Binary operator</h3>
+      <hr />
+
+      <div class="code-snippet">
+        <div class="code-header">
+          <span class="code-language">Java</span>
+          <button class="code-copy-btn">
+            <i class="fa-regular fa-copy"></i> Copy
+          </button>
+        </div>
+        <pre class="code-body">
+          <code><span class="hljs-keyword">class</span> <span class="hljs-title class_">basic</span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String args[])</span>{
+        <span class="hljs-type">int</span> <span class="hljs-variable">a</span> <span class="hljs-operator">=</span> <span class="hljs-number">10</span>;
+        System.out.println(a);
+            a++; <span class="hljs-comment">//post increment</span>
+        System.out.println(a);
+            ++a; <span class="hljs-comment">//pre increment</span>
+        System.out.println(a);
+            a--; <span class="hljs-comment">//post decrement</span>
+        System.out.println(a);
+            --a; <span class="hljs-comment">//pre decrement</span>
+        System.out.println(a);
+       }
+  }
+</code></pre>
+      </div>
+      <h3 id="bitwise-or-shift-operators-in-java">
+        bitwise or shift operators
+      </h3>
+      <hr />
+
+      <div class="code-snippet">
+        <div class="code-header">
+          <span class="code-language">Java</span>
+          <button class="code-copy-btn">
+            <i class="fa-regular fa-copy"></i> Copy
+          </button>
+        </div>
+        <pre class="code-body">
+          <code><span class="hljs-keyword">class</span> <span class="hljs-title class_">basic</span>{
+  <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String args[])</span>{
+      <span class="hljs-type">int</span> a=<span class="hljs-number">2</span>,b=<span class="hljs-number">3</span>;
+      System.out.println(<span class="hljs-string">&quot;bitwise and &quot;</span> + (a&amp;b));
+      System.out.println(<span class="hljs-string">&quot;bitwise or &quot;</span> + (a|b));
+      System.out.println(<span class="hljs-string">&quot;bitwise Xor &quot;</span> + (a^b));
+      System.out.println(<span class="hljs-string">&quot;bitwise not &quot;</span> + (~a));
+     }
+}
+
+</code></pre>
+      </div>
+    </section>
+    <section class="container" id="java-scanner-class">
+      <h3 id="scanner-class">Scanner class</h3>
+      <hr />
+
+      <div class="code-snippet">
+        <div class="code-header">
+          <span class="code-language">Java</span>
+          <button class="code-copy-btn">
+            <i class="fa-regular fa-copy"></i> Copy
+          </button>
+        </div>
+        <pre class="code-body">
+          <code><span class="hljs-keyword">import</span> java.util.Scanner;
+
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">basic</span>{
+  <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String args[])</span>{
+
+      <span class="hljs-type">Scanner</span> <span class="hljs-variable">in</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Scanner</span>(System.in);
+      <span class="hljs-comment">//a2+b2+2ab</span>
+      <span class="hljs-type">int</span> a,b,c;
+      a=in.nextInt();<span class="hljs-number">2</span>
+      b=in.nextInt();
+      c=(a*a)+(b*b)+(<span class="hljs-number">2</span>*a*b);
+
+      System.out.println(c);
+     }
+}
+</code></pre>
+      </div>
+    </section>
+    <section class="container" id="java-statements">
+      <h1>Statements</h1>
+      <h3 id="if-statement">If statement</h3>
+      <hr />
+
+      <div class="code-snippet">
+        <div class="code-header">
+          <span class="code-language">Java</span>
+          <button class="code-copy-btn">
+            <i class="fa-regular fa-copy"></i> Copy
+          </button>
+        </div>
+        <pre class="code-body">
+          <code><span class="hljs-keyword">import</span> java.util.Scanner;
+
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">basic</span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String args[])</span>{
+
+        <span class="hljs-type">Scanner</span> <span class="hljs-variable">in</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Scanner</span>(System.in);
+        <span class="hljs-type">int</span> a;
+        System.out.println(<span class="hljs-string">&quot;Enter value for a :&quot;</span>);
+        a=in.nextInt();
+        <span class="hljs-keyword">if</span>(a&gt;=<span class="hljs-number">17</span>){
+            System.out.println(<span class="hljs-string">&quot;You are eligible for apply&quot;</span>);
+        }
+       }
+  }
+</code></pre>
+      </div>
+      <h3 id="if-else-statement">If-else statement</h3>
+      <hr />
+
+      <div class="code-snippet">
+        <div class="code-header">
+          <span class="code-language">Java</span>
+          <button class="code-copy-btn">
+            <i class="fa-regular fa-copy"></i> Copy
+          </button>
+        </div>
+        <pre class="code-body">
+          <code><span class="hljs-keyword">import</span> java.util.Scanner;
+
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">basic</span>{
+  <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String args[])</span>{
+
+      <span class="hljs-type">Scanner</span> <span class="hljs-variable">in</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Scanner</span>(System.in);
+      <span class="hljs-type">int</span> a;
+      System.out.println(<span class="hljs-string">&quot;Enter value for a :&quot;</span>);
+      a=in.nextInt();
+      <span class="hljs-keyword">if</span>(a&gt;=<span class="hljs-number">17</span>){
+          System.out.println(<span class="hljs-string">&quot;You are eligible for apply&quot;</span>);
+      }<span class="hljs-keyword">else</span>{
+          System.out.println(<span class="hljs-string">&quot;You are not eligible for apply&quot;</span>);
+     }
+}}
+
+</code></pre>
+      </div>
+      <h3 id="else-if-statement">else-if statement</h3>
+      <hr />
+
+      <div class="code-snippet">
+        <div class="code-header">
+          <span class="code-language">Java</span>
+          <button class="code-copy-btn">
+            <i class="fa-regular fa-copy"></i> Copy
+          </button>
+        </div>
+        <pre class="code-body">
+          <code><span class="hljs-keyword">import</span> java.util.Scanner;
+
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">basic</span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String args[])</span>{
+        <span class="hljs-type">Scanner</span> <span class="hljs-variable">in</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Scanner</span>(System.in);
+        <span class="hljs-type">float</span> a;
+        System.out.println(<span class="hljs-string">&quot;Enter your mark :&quot;</span>);
+        a=in.nextfloat();
+        <span class="hljs-keyword">if</span>(a&gt;=<span class="hljs-number">90</span> &amp;&amp; a&lt;=<span class="hljs-number">100</span>){
+            System.out.println(<span class="hljs-string">&quot;grade A&quot;</span>);
+        }<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(a&gt;=<span class="hljs-number">80</span> &amp;&amp; a&lt;=<span class="hljs-number">89</span>){
+            System.out.println(<span class="hljs-string">&quot;Grade B&quot;</span>);
+       }<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(a&gt;=<span class="hljs-number">70</span> &amp;&amp; a&lt;=<span class="hljs-number">79</span>){
+            System.out.println(<span class="hljs-string">&quot;Grade C&quot;</span>);
+       }<span class="hljs-keyword">else</span>{
+            System.out.println(<span class="hljs-string">&quot;Grade D&quot;</span>);
+       }
+  }
+  }
+</code></pre>
+      </div>
+      <h3 id="nested-if-statement">Nested if statement</h3>
+      <hr />
+
+      <div class="code-snippet">
+        <div class="code-header">
+          <span class="code-language">Java</span>
+          <button class="code-copy-btn">
+            <i class="fa-regular fa-copy"></i> Copy
+          </button>
+        </div>
+        <pre class="code-body">
+          <code><span class="hljs-keyword">import</span> java.util.Scanner;
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">basic</span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String args[])</span>{
+        <span class="hljs-type">Scanner</span> <span class="hljs-variable">out</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Scanner</span>(System.in);
+        System.out.println(<span class="hljs-string">&quot;Enter your marital status :&quot;</span>);
+        <span class="hljs-type">char</span> <span class="hljs-variable">ele</span> <span class="hljs-operator">=</span> out.next().charAt(<span class="hljs-number">0</span>);
+
+        <span class="hljs-keyword">if</span>(ele == <span class="hljs-string">&#x27;u&#x27;</span> || ele == <span class="hljs-string">&#x27;U&#x27;</span>){
+            System.out.println(<span class="hljs-string">&quot;Male/Female :&quot;</span>);
+            <span class="hljs-type">char</span> <span class="hljs-variable">gender</span> <span class="hljs-operator">=</span> out.next().charAt(<span class="hljs-number">0</span>);
+            <span class="hljs-keyword">if</span>(gender == <span class="hljs-string">&#x27;f&#x27;</span> || gender == <span class="hljs-string">&#x27;F&#x27;</span>){
+                System.out.println(<span class="hljs-string">&quot;Enjoy your life doli&quot;</span>);
+            }<span class="hljs-keyword">else</span> {
+                System.out.println(<span class="hljs-string">&quot;Enjoy your life tholare&quot;</span>);
+            }
+           
+        }<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(ele == <span class="hljs-string">&#x27;m&#x27;</span> || ele == <span class="hljs-string">&#x27;M&#x27;</span>){
+            System.out.println(<span class="hljs-string">&quot;lifefa tholachitiya pangu&quot;</span>);
+        }<span class="hljs-keyword">else</span>{
+            System.out.println(<span class="hljs-string">&quot;Bee happy and safe&quot;</span>);
+        }
+  }}
+</code></pre>
+      </div>
+      <h3 id="switch-case-statement">Switch case statement</h3>
+      <hr />
+
+      <div class="code-snippet">
+        <div class="code-header">
+          <span class="code-language">Java</span>
+          <button class="code-copy-btn">
+            <i class="fa-regular fa-copy"></i> Copy
+          </button>
+        </div>
+        <pre class="code-body">
+          <code><span class="hljs-keyword">import</span> java.util.Scanner;
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">basic</span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String args[])</span>{
+        System.out.println(<span class="hljs-string">&quot;Enter 1 is Addition :&quot;</span>);
+        System.out.println(<span class="hljs-string">&quot;Enter 2 is subtraction :&quot;</span>);
+        System.out.println(<span class="hljs-string">&quot;Enter 3 is multiplication :&quot;</span>);
+        System.out.println(<span class="hljs-string">&quot;Enter 4 is deviation :&quot;</span>);
+        System.out.println(<span class="hljs-string">&quot;Enter your choice :&quot;</span>);
+        <span class="hljs-type">int</span> a,b,ch;
+        <span class="hljs-type">Scanner</span> <span class="hljs-variable">output</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Scanner</span>(System.in);
+        ch = output.nextInt();
+        System.out.println(<span class="hljs-string">&quot;Enter 2 numbers :&quot;</span>);
+        a=output.nextInt();
+        b=output.nextInt();
+        <span class="hljs-keyword">switch</span>(ch){
+            <span class="hljs-keyword">case</span> <span class="hljs-number">1</span>:
+                    System.out.println(<span class="hljs-string">&quot;Enter 1 is Addition :&quot;</span> +(a+b));
+                    <span class="hljs-keyword">break</span>;
+            <span class="hljs-keyword">case</span> <span class="hljs-number">2</span>:
+                    System.out.println(<span class="hljs-string">&quot;Enter 2 is subtraction :&quot;</span> + (a-b));
+                    <span class="hljs-keyword">break</span>;
+            <span class="hljs-keyword">case</span> <span class="hljs-number">3</span>:
+                    System.out.println(<span class="hljs-string">&quot;Enter 3 is multiplication:&quot;</span>+(a*b));
+                    <span class="hljs-keyword">break</span>;
+            <span class="hljs-keyword">case</span> <span class="hljs-number">4</span>:
+                    System.out.println(<span class="hljs-string">&quot;Enter 4 is deviation :&quot;</span> + (a/b));
+                    <span class="hljs-keyword">break</span>;
+            <span class="hljs-keyword">default</span>:
+                    System.out.println(<span class="hljs-string">&quot;invalid selection&quot;</span>);
+                    <span class="hljs-keyword">break</span>;
+            }
+          }
+        }
+</code></pre>
+      </div>
+      <h3 id="group-switch-case-statement">Group switch case statement</h3>
+      <hr />
+
+      <div class="code-snippet">
+        <div class="code-header">
+          <span class="code-language">Java</span>
+          <button class="code-copy-btn">
+            <i class="fa-regular fa-copy"></i> Copy
+          </button>
+        </div>
+        <pre class="code-body">
+          <code><span class="hljs-keyword">import</span> java.util.Scanner;
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">basic</span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String args[])</span>{
+        <span class="hljs-type">char</span> a;
+        <span class="hljs-type">Scanner</span> <span class="hljs-variable">output</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Scanner</span>(System.in);
+        System.out.println(<span class="hljs-string">&quot;Enter letter :&quot;</span>);
+        a = output.next().charAt(<span class="hljs-number">0</span>);
+        <span class="hljs-keyword">switch</span>(a){
+        <span class="hljs-keyword">case</span> <span class="hljs-string">&#x27;a&#x27;</span>:
+        <span class="hljs-keyword">case</span> <span class="hljs-string">&#x27;e&#x27;</span>:
+        <span class="hljs-keyword">case</span> <span class="hljs-string">&#x27;i&#x27;</span>:
+        <span class="hljs-keyword">case</span> <span class="hljs-string">&#x27;o&#x27;</span>:
+        <span class="hljs-keyword">case</span> <span class="hljs-string">&#x27;u&#x27;</span>:
+        <span class="hljs-keyword">case</span> <span class="hljs-string">&#x27;A&#x27;</span>:
+        <span class="hljs-keyword">case</span> <span class="hljs-string">&#x27;E&#x27;</span>:
+        <span class="hljs-keyword">case</span> <span class="hljs-string">&#x27;I&#x27;</span>:
+        <span class="hljs-keyword">case</span> <span class="hljs-string">&#x27;O&#x27;</span>:
+        <span class="hljs-keyword">case</span> <span class="hljs-string">&#x27;U&#x27;</span>:         
+        System.out.println(a+<span class="hljs-string">&quot; is vowel&quot;</span>);
+        <span class="hljs-keyword">break</span>;
+        <span class="hljs-keyword">default</span>:
+        System.out.println(a+<span class="hljs-string">&quot; is not vowel&quot;</span>);
+        <span class="hljs-keyword">break</span>;
+}}}
+</code></pre>
+      </div>
+      <h3 id="while---loop-statement-in-java">While - loop statement</h3>
+      <hr />
+
+      <div class="code-snippet">
+        <div class="code-header">
+          <span class="code-language">Java</span>
+          <button class="code-copy-btn">
+            <i class="fa-regular fa-copy"></i> Copy
+          </button>
+        </div>
+        <pre class="code-body">
+          <code><span class="hljs-keyword">import</span> java.util.Scanner;
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">basic</span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span>{
+        System.out.println(<span class="hljs-string">&quot;Enter your limit : &quot;</span>);
+        <span class="hljs-type">Scanner</span> <span class="hljs-variable">in</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Scanner</span>(System.in);
+        <span class="hljs-type">int</span> <span class="hljs-variable">n</span> <span class="hljs-operator">=</span> in.nextInt(),i = <span class="hljs-number">1</span>;
+        <span class="hljs-keyword">while</span>(i&lt;=n){
+           System.out.println(i);
+           i++;
+        }
+      }
+   }
+</code></pre>
+      </div>
+      <h3 id="do---while-loop-statement-in-java">Do - while loop statement</h3>
+      <hr />
+
+      <div class="code-snippet">
+        <div class="code-header">
+          <span class="code-language">Java</span>
+          <button class="code-copy-btn">
+            <i class="fa-regular fa-copy"></i> Copy
+          </button>
+        </div>
+        <pre class="code-body">
+          <code><span class="hljs-keyword">import</span> java.util.Scanner;
+
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">basic</span>{
+ <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span>{
+     System.out.println(<span class="hljs-string">&quot;Enter your limit : &quot;</span>);
+     <span class="hljs-type">Scanner</span> <span class="hljs-variable">in</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Scanner</span>(System.in);
+     <span class="hljs-type">int</span> <span class="hljs-variable">n</span> <span class="hljs-operator">=</span> in.nextInt(),i = <span class="hljs-number">2</span>;
+     <span class="hljs-keyword">do</span>{
+        System.out.println(i);
+        i=i+<span class="hljs-number">2</span>;
+     }<span class="hljs-keyword">while</span>(i&lt;=n);
+}
+}
+</code></pre>
+      </div>
+      <h3 id="for-loop-statement-in-java">For loop statement</h3>
+      <hr />
+
+      <div class="code-snippet">
+        <div class="code-header">
+          <span class="code-language">Java</span>
+          <button class="code-copy-btn">
+            <i class="fa-regular fa-copy"></i> Copy
+          </button>
+        </div>
+        <pre class="code-body">
+          <code><span class="hljs-keyword">import</span> java.util.Scanner;
+
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">basic</span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span>{
+        System.out.println(<span class="hljs-string">&quot;Enter your limit : &quot;</span>);
+        <span class="hljs-type">Scanner</span> <span class="hljs-variable">in</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Scanner</span>(System.in);
+        <span class="hljs-type">int</span> <span class="hljs-variable">n</span> <span class="hljs-operator">=</span> in.nextInt();
+        <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> <span class="hljs-variable">i</span> <span class="hljs-operator">=</span> <span class="hljs-number">1</span>;i&lt;=n;i++){
+            System.out.println(i);
+        }
+   }
+}
+</code></pre>
+      </div>
+      <h3 id="break-and-continue-statement-in-java">
+        Break and continue statement
+      </h3>
+      <hr />
+
+      <div class="code-snippet">
+        <div class="code-header">
+          <span class="code-language">Java</span>
+          <button class="code-copy-btn">
+            <i class="fa-regular fa-copy"></i> Copy
+          </button>
+        </div>
+        <pre class="code-body">
+          <code><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">basic</span> {
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> {
+        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> <span class="hljs-variable">i</span> <span class="hljs-operator">=</span> <span class="hljs-number">1</span>; i &lt;= <span class="hljs-number">10</span>; i++) {
+            <span class="hljs-keyword">if</span>(i==<span class="hljs-number">5</span>)
+            <span class="hljs-keyword">continue</span>;
+            System.out.println(i);
+            <span class="hljs-keyword">if</span>(i==<span class="hljs-number">8</span>)
+            <span class="hljs-keyword">break</span>;
+        }
+    }
+}
+</code></pre>
+      </div>
+      <h3 id="enhanced-for-loop-statement-in-java">
+        Enhanced for loop statement
+      </h3>
+      <hr />
+
+      <div class="code-snippet">
+        <div class="code-header">
+          <span class="code-language">Java</span>
+          <button class="code-copy-btn">
+            <i class="fa-regular fa-copy"></i> Copy
+          </button>
+        </div>
+        <pre class="code-body">
+          <code><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">basic</span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span>{
+        String names[]={<span class="hljs-string">&quot;Prasanna&quot;</span>,<span class="hljs-string">&quot;Mukil&quot;</span>,<span class="hljs-string">&quot;Madhan&quot;</span>};
+        <span class="hljs-keyword">for</span>(String n : names){
+            System.out.println(n);
+        }
+   }}
+</code></pre>
+      </div>
+      <h3 id="nested-for-loop-statement-in-java">Nested for loop statement</h3>
+      <hr />
+
+      <div class="code-snippet">
+        <div class="code-header">
+          <span class="code-language">Java</span>
+          <button class="code-copy-btn">
+            <i class="fa-regular fa-copy"></i> Copy
+          </button>
+        </div>
+        <pre class="code-body">
+          <code><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">basic</span> {
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> {
+        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> <span class="hljs-variable">i</span> <span class="hljs-operator">=</span> <span class="hljs-number">1</span>; i &lt;= <span class="hljs-number">5</span>; i++) {
+            <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> <span class="hljs-variable">w</span> <span class="hljs-operator">=</span> <span class="hljs-number">1</span>; w &lt;= <span class="hljs-number">5</span>; w++) {
+                System.out.print(<span class="hljs-string">&quot;*&quot;</span>);
+            }
+            System.out.println(<span class="hljs-string">&quot;&quot;</span>);
+        }
+     }
+  }
+</code></pre>
+      </div>
+    </section>
+    <section class="container" id="java-access-modifier">
+      <h1 id="access-modifier">Access modifier</h1>
+
+      <div class="code-snippet">
+        <div class="code-header">
+          <span class="code-language">Java</span>
+          <button class="code-copy-btn">
+            <i class="fa-regular fa-copy"></i> Copy
+          </button>
+        </div>
+        <pre class="code-body">
+          <code><span class="hljs-keyword">package</span> com.fwsa;
+<span class="hljs-keyword">import</span> java.lang.String;
+
+    <span class="hljs-keyword">class</span> <span class="hljs-title class_">parent</span> {
+        <span class="hljs-keyword">private</span> <span class="hljs-type">int</span> <span class="hljs-variable">atm</span> <span class="hljs-operator">=</span> <span class="hljs-number">1234</span>;
+        <span class="hljs-type">String</span> <span class="hljs-variable">name</span> <span class="hljs-operator">=</span> <span class="hljs-string">&quot;mukil&quot;</span>;
+        <span class="hljs-keyword">protected</span> <span class="hljs-type">String</span> <span class="hljs-variable">gen</span> <span class="hljs-operator">=</span> <span class="hljs-string">&quot;m&quot;</span>;
+        
+        <span class="hljs-keyword">private</span> <span class="hljs-type">int</span> <span class="hljs-title function_">atmpin</span><span class="hljs-params">()</span>{
+            <span class="hljs-keyword">return</span> atm;
+        }
+
+        String <span class="hljs-title function_">na</span><span class="hljs-params">()</span>{
+            <span class="hljs-keyword">return</span> name;
+        }
+
+        <span class="hljs-keyword">public</span> String <span class="hljs-title function_">gender</span><span class="hljs-params">()</span>{
+            <span class="hljs-keyword">return</span> gen;
+        }
+
+        <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String args[])</span>{
+            <span class="hljs-type">parent</span> <span class="hljs-variable">obj</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">parent</span>();
+
+            System.out.println(obj.atmpin());
+            System.out.println(obj.na());
+            System.out.println(obj.gender());
+        }
+    }
+</code></pre>
+      </div>
+    </section>
+    <section class="container" id="java-oops">
+      <h1 id="oops">OOPS</h1>
+      <h3 id="java-single-inheritance">Java single Inheritance</h3>
+      <hr />
+
+      <div class="code-snippet">
+        <div class="code-header">
+          <span class="code-language">Java</span>
+          <button class="code-copy-btn">
+            <i class="fa-regular fa-copy"></i> Copy
+          </button>
+        </div>
+        <pre class="code-body">
+          <code><span class="hljs-keyword">package</span> com.fwsa;
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">madhan</span> {
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">number</span><span class="hljs-params">()</span>{
+        System.out.println(<span class="hljs-string">&quot;9791836225&quot;</span>);
+    }
+}
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">mukil</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">madhan</span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">name</span><span class="hljs-params">()</span>{
+        System.out.println(<span class="hljs-string">&quot;Hello i am mukil&quot;</span>);
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String args[])</span>{
+        <span class="hljs-type">mukil</span> <span class="hljs-variable">obj</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">mukil</span>();
+        obj.number();
+        obj.name();
+    }
+}
+</code></pre>
+      </div>
+      <h3 id="java-multilevel-inheritance">Java multilevel Inheritance</h3>
+      <hr />
+
+      <div class="code-snippet">
+        <div class="code-header">
+          <span class="code-language">Java</span>
+          <button class="code-copy-btn">
+            <i class="fa-regular fa-copy"></i> Copy
+          </button>
+        </div>
+        <pre class="code-body">
+          <code><span class="hljs-keyword">package</span> com.fwsa;
+
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">madhan</span> {
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">number</span><span class="hljs-params">()</span>{
+        System.out.println(<span class="hljs-string">&quot;9791836225&quot;</span>);
+    }
+}
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">mukil</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">madhan</span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">from</span><span class="hljs-params">()</span>{
+        System.out.println(<span class="hljs-string">&quot;Hello i am from thanjavur&quot;</span>);
+    }
+}
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">prasanna</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">mukil</span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">name</span><span class="hljs-params">()</span>{
+        System.out.println(<span class="hljs-string">&quot;Hello I am prasanna&quot;</span>);
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String args[])</span>{
+        <span class="hljs-type">prasanna</span> <span class="hljs-variable">obj</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">prasanna</span>();
+        obj.number();
+        obj.name();
+        obj.from();
+    }
+}
+</code></pre>
+      </div>
+      <h3 id="super-keyword-in-inheritance">super Keyword in Inheritance</h3>
+      <hr />
+
+      <div class="code-snippet">
+        <div class="code-header">
+          <span class="code-language">Java</span>
+          <button class="code-copy-btn">
+            <i class="fa-regular fa-copy"></i> Copy
+          </button>
+        </div>
+        <pre class="code-body">
+          <code><span class="hljs-keyword">package</span> com.fwsa;
+
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">madhan</span> {
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">number</span><span class="hljs-params">()</span>{
+        System.out.println(<span class="hljs-string">&quot;9791836225&quot;</span>);
+    }
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">name</span><span class="hljs-params">()</span>{
+        System.out.println(<span class="hljs-string">&quot;Hello I am madhan&quot;</span>);
+    }
+}
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">mukil</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">madhan</span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">from</span><span class="hljs-params">()</span>{
+        System.out.println(<span class="hljs-string">&quot;Hello i am from thanjavur&quot;</span>);
+    }
+}
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">prasanna</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">mukil</span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">name</span><span class="hljs-params">()</span>{
+        System.out.println(<span class="hljs-string">&quot;Hello I am prasanna&quot;</span>);
+    }
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">from</span><span class="hljs-params">()</span>{
+        <span class="hljs-built_in">super</span>.from();
+        System.out.println(<span class="hljs-string">&quot;Hello i am from chennai&quot;</span>);
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String args[])</span>{
+        <span class="hljs-type">prasanna</span> <span class="hljs-variable">obj</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">prasanna</span>();
+        obj.number();
+        obj.name();
+        obj.from();
+    }
+}
+</code></pre>
+      </div>
+      <h3 id="java-abstract-class-and-abstract-methods">
+        Java Abstract Class and Abstract Methods
+      </h3>
+      <hr />
+
+      <div class="code-snippet">
+        <div class="code-header">
+          <span class="code-language">Java</span>
+          <button class="code-copy-btn">
+            <i class="fa-regular fa-copy"></i> Copy
+          </button>
+        </div>
+        <pre class="code-body">
+          <code><span class="hljs-keyword">package</span> com.fwsa;
+<span class="hljs-keyword">abstract</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">madhan</span> {
+
+    <span class="hljs-keyword">abstract</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">number</span><span class="hljs-params">()</span>;
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">name</span><span class="hljs-params">()</span>{
+        System.out.println(<span class="hljs-string">&quot;Hello I am madhan&quot;</span>);
+    }
+}
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">mukil</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">madhan</span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">number</span><span class="hljs-params">()</span>{
+        System.out.println(<span class="hljs-string">&quot;My number is 9791836225&quot;</span>);
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String args[])</span>{
+        <span class="hljs-type">mukil</span> <span class="hljs-variable">obj</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">mukil</span>();
+        obj.number();
+        obj.name();
+    }
+}
+</code></pre>
+      </div>
+      <h3 id="java-interface">Java Interface</h3>
+      <hr />
+
+      <div class="code-snippet">
+        <div class="code-header">
+          <span class="code-language">Java</span>
+          <button class="code-copy-btn">
+            <i class="fa-regular fa-copy"></i> Copy
+          </button>
+        </div>
+        <pre class="code-body">
+          <code><span class="hljs-keyword">package</span> com.prasanna;
+
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">sathish</span> {
+    <span class="hljs-keyword">void</span> <span class="hljs-title function_">relationship</span><span class="hljs-params">()</span>;
+    <span class="hljs-keyword">void</span> <span class="hljs-title function_">meeting</span><span class="hljs-params">()</span>;
+}
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">Keerthi</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">sathish</span> {
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">relationship</span><span class="hljs-params">()</span> {
+        System.out.println(<span class="hljs-string">&quot;we are friends&quot;</span>);
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">meeting</span><span class="hljs-params">()</span>{
+        System.out.println(<span class="hljs-string">&quot;we meat in college&quot;</span>);
+    }
+}
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">Main</span> {
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> {
+        <span class="hljs-type">Keerthi</span> <span class="hljs-variable">obj</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Keerthi</span>();
+        obj.relationship();
+        obj.meeting();
+    }
+}
+</code></pre>
+      </div>
+      <h3 id="multi-interface">Multi interface</h3>
+      <hr />
+
+      <div class="code-snippet">
+        <div class="code-header">
+          <span class="code-language">Java</span>
+          <button class="code-copy-btn">
+            <i class="fa-regular fa-copy"></i> Copy
+          </button>
+        </div>
+        <pre class="code-body">
+          <code><span class="hljs-keyword">package</span> com.prasanna;
+
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">sathish</span> {
+    <span class="hljs-keyword">void</span> <span class="hljs-title function_">relationship</span><span class="hljs-params">()</span>;
+    <span class="hljs-keyword">void</span> <span class="hljs-title function_">meeting</span><span class="hljs-params">()</span>;
+}
+
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">santhosh</span> {
+    <span class="hljs-keyword">void</span> <span class="hljs-title function_">number</span><span class="hljs-params">()</span>;
+    <span class="hljs-keyword">void</span> <span class="hljs-title function_">name</span><span class="hljs-params">()</span>;
+}
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">Keerthi</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">sathish</span>, santhosh {
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">relationship</span><span class="hljs-params">()</span> {
+        System.out.println(<span class="hljs-string">&quot;we are friends&quot;</span>);
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">meeting</span><span class="hljs-params">()</span>{
+        System.out.println(<span class="hljs-string">&quot;we meat in college&quot;</span>);
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">number</span><span class="hljs-params">()</span>{
+        System.out.println(<span class="hljs-string">&quot;My number is 9791836225&quot;</span>);
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">name</span><span class="hljs-params">()</span>{
+        System.out.println(<span class="hljs-string">&quot;My name is Prasanna&quot;</span>);
+    }
+}
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">Main</span> {
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> {
+        <span class="hljs-type">Keerthi</span> <span class="hljs-variable">obj</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Keerthi</span>();
+        obj.relationship();
+        obj.meeting();
+        obj.name();
+        obj.number();
+    }
+}
+</code></pre>
+      </div>
+      <h3 id="java-polymorphism-overriding">Java Polymorphism overriding</h3>
+      <hr />
+
+      <div class="code-snippet">
+        <div class="code-header">
+          <span class="code-language">Java</span>
+          <button class="code-copy-btn">
+            <i class="fa-regular fa-copy"></i> Copy
+          </button>
+        </div>
+        <pre class="code-body">
+          <code><span class="hljs-keyword">package</span> com.fwsa;
+
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">poly</span> {
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">Coffee</span><span class="hljs-params">()</span> {
+        System.out.println(<span class="hljs-string">&quot;Coffee is too hot&quot;</span>);
+    }
+}
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">curd</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">poly</span> {
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">Coffee</span><span class="hljs-params">()</span> {
+        System.out.println(<span class="hljs-string">&quot;Coffee is too cool&quot;</span>);
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String args[])</span> {
+        <span class="hljs-type">poly</span> <span class="hljs-variable">obj1</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">poly</span>();
+        <span class="hljs-type">curd</span> <span class="hljs-variable">obj</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">curd</span>();
+        obj1.Coffee();
+        obj.Coffee();
+    }
+}
+</code></pre>
+      </div>
+      <h3 id="java-polymorphism-method-overloading">
+        Java Polymorphism Method Overloading
+      </h3>
+      <hr />
+
+      <div class="code-snippet">
+        <div class="code-header">
+          <span class="code-language">Java</span>
+          <button class="code-copy-btn">
+            <i class="fa-regular fa-copy"></i> Copy
+          </button>
+        </div>
+        <pre class="code-body">
+          <code><span class="hljs-keyword">package</span> com.fwsa;
+
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">poly</span> {
+    <span class="hljs-keyword">public</span> <span class="hljs-type">int</span> <span class="hljs-title function_">Coffee</span><span class="hljs-params">( <span class="hljs-type">int</span> number)</span> {
+        System.out.println(<span class="hljs-string">&quot;My number is &quot;</span> + number );
+        <span class="hljs-keyword">return</span> number;
+    }
+
+
+    <span class="hljs-keyword">public</span> String <span class="hljs-title function_">Coffee</span><span class="hljs-params">(String name)</span> {
+        System.out.println(<span class="hljs-string">&quot;My name is &quot;</span> + name );
+        <span class="hljs-keyword">return</span> name;
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String args[])</span> {
+        <span class="hljs-type">poly</span> <span class="hljs-variable">obj1</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">poly</span>();
+        obj1.Coffee(<span class="hljs-number">1836</span>);
+    }
+}
+</code></pre>
+      </div>
+      <h3 id="java-encapsulation">Java Encapsulation</h3>
+      <hr />
+
+      <div class="code-snippet">
+        <div class="code-header">
+          <span class="code-language">Java</span>
+          <button class="code-copy-btn">
+            <i class="fa-regular fa-copy"></i> Copy
+          </button>
+        </div>
+        <pre class="code-body">
+          <code><span class="hljs-keyword">package</span> com.fwsa;
+<span class="hljs-keyword">import</span> java.lang.String;
+
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">userdata</span> {
+    <span class="hljs-keyword">protected</span> <span class="hljs-type">int</span> phonenumber;
+    <span class="hljs-keyword">private</span> String name;
+
+    <span class="hljs-keyword">public</span> <span class="hljs-type">int</span> <span class="hljs-title function_">setnumber</span><span class="hljs-params">(<span class="hljs-type">int</span> phonenumber)</span> {
+        <span class="hljs-keyword">return</span> phonenumber;
+    }
+
+    <span class="hljs-keyword">public</span> String <span class="hljs-title function_">getna</span><span class="hljs-params">()</span>{
+        <span class="hljs-keyword">return</span> name;
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">setna</span><span class="hljs-params">(String name)</span>{
+        <span class="hljs-built_in">this</span>.name = name;
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String args[])</span>{
+        <span class="hljs-type">userdata</span> <span class="hljs-variable">obj</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">userdata</span>();
+        obj.setna(<span class="hljs-string">&quot;Sam&quot;</span>);
+
+        System.out.println(obj.setnumber(<span class="hljs-number">1234567890</span>) + <span class="hljs-string">&quot; &quot;</span> + obj.getna());
+    }
+}
+</code></pre>
+      </div>
+      <h3 id="boxing">Boxing</h3>
+      <hr />
+
+      <div class="code-snippet">
+        <div class="code-header">
+          <span class="code-language">Java</span>
+          <button class="code-copy-btn">
+            <i class="fa-regular fa-copy"></i> Copy
+          </button>
+        </div>
+        <pre class="code-body">
+          <code><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> {
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span>{
+        <span class="hljs-type">int</span> <span class="hljs-variable">a</span> <span class="hljs-operator">=</span> <span class="hljs-number">10</span>;
+        <span class="hljs-type">Integer</span> <span class="hljs-variable">obj1</span> <span class="hljs-operator">=</span> Integer.valueOf(a);
+        <span class="hljs-type">Integer</span> <span class="hljs-variable">obj2</span> <span class="hljs-operator">=</span> a;
+        System.out.print(obj2);
+    }
+}
+</code></pre>
+      </div>
+      <h3 id="unboxing">Unboxing</h3>
+      <hr />
+
+      <div class="code-snippet">
+        <div class="code-header">
+          <span class="code-language">Java</span>
+          <button class="code-copy-btn">
+            <i class="fa-regular fa-copy"></i> Copy
+          </button>
+        </div>
+        <pre class="code-body">
+          <code><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> {
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span>{
+        <span class="hljs-type">Integer</span> <span class="hljs-variable">obj1</span> <span class="hljs-operator">=</span> Integer.valueOf(<span class="hljs-number">10</span>);
+        <span class="hljs-type">int</span> <span class="hljs-variable">a</span> <span class="hljs-operator">=</span> obj1.Intvalue();
+        <span class="hljs-type">int</span> <span class="hljs-variable">b</span> <span class="hljs-operator">=</span> obj1;
+        System.out.print(a);
+    }
+}
+</code></pre>
+      </div>
+    </section>
+    <footer class="main-footer" id="footer"></footer>
+
+    <script src="./../assets/js/main.js"></script>
+    <script src="./../assets/js/common.js"></script>
+
+    <!-- Link boostrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

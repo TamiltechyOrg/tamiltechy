@@ -34,6 +34,10 @@ body {
   align-items: center;
 }
 
+@media only screen and (max-width: 600px) {
+#java div iframe{
+  height: 50vh;
+}}
 .loader {
   --cube-size: 25px;
 
